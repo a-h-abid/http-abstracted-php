@@ -1,0 +1,18 @@
+{
+  "name": "moduvel/http-abstracted",
+  "type": "library",
+  "description": "An abstracted HTTP layer to use in application with integration to various PHP frameworks.",
+  "license": "MIT",
+  "keywords": ["http", "abstract"],
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Moduvel\\HttpAbstracted\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "extra": {}
+}

@@ -1,0 +1,14 @@
+services:
+    Moduvel\HttpAbstracted\Request\SymfonyRequest:
+        autowire: true
+
+    Moduvel\HttpAbstracted\Response\SymfonyResponse:
+        autowire: true
+
+    Moduvel\HttpAbstracted\Request\RequestInterface: '@Moduvel\HttpAbstracted\Request\SymfonyRequest'
+
+    Moduvel\HttpAbstracted\Response\ResponseInterface: '@Moduvel\HttpAbstracted\Response\SymfonyResponse'
+
+    Moduvel\HttpHealthChecker\:
+        resource: '../../http-health-checker/src/'
+        tags: ['controller.service_arguments']
